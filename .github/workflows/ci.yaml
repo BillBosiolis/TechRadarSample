@@ -54,7 +54,7 @@ jobs:
   release_lib:
     name: Release lib
     # https://github.community/t/trigger-job-on-tag-push-only/18076
-    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: test
     runs-on: ubuntu-latest
     steps:
