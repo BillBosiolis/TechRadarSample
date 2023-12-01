@@ -22,7 +22,7 @@ jobs:
   release_radar:
     name: Publish radar to gh-pages
     # https://github.community/t/trigger-job-on-tag-push-only/18076
-    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     needs: test
     steps:
